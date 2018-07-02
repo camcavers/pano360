@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Panorama 360&deg; jquery plugin</title>
+	<link rel="stylesheet" href="css/panorama360.css" media="all" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/jquery.panorama360.js"></script>
+	<script>
+	<!--
+		$(function(){
+			$('.panorama-view').panorama360();
+		});
+	-->
+	</script>
+</head>
+<body>
+
+<h2>Panorama 360&deg; jquery plugin</h2>
+
+<a href="jquery-panorama-plugin.zip">Download</a><br>
+
+<p>Once I discovered an unbelievably simple way to create panoramas 
+using Windows Live Photogallery and, of course, I wanted to show results to friends.</p>
+
+<p>I don't like flash at all, but Silverlight is not accessible sometimes
+(freebsd, linuxes, ipads and other relicts), so I chose JQuery.</p>
+
+<p>After ten minutes of browsing internet, I found ready to use jquery plugin
+by <a href="http://liviuholhos.com/">Liviu Holhos</a>.
+It was just as I need, simple and open source, but there was weird scrolling, so I fixed it.
+There was a number of contributions from another people either.</p>
+
+<p>Sadly, Liviu has decided to abandon his open project and to make plugin commercial.
+I think, it would be just fair to publish old version, polished by community.</p> 
+
+<p>Features:</p>
+<ul>
+	<li>Endless scrolling</li>
+	<li>Both full page and embedded mode</li>
+	<li>Kinetic effect</li>
+	<li>Scroll with mouse wheel</li>
+</ul>
+
+<p>The picture below is a panorama, and you can scroll it using mouse wheel or drag.
+Take a look at a <a href="demo.html">fullpage demo</a>.</p>
+
+<div class="panorama round" style="width:700px;height:500px;padding:10px;background-color:#444;">
+	<div class="panorama-view">
+		<div class="panorama-container">
+			<img src="images/demo500px.jpg" data-width="4077" data-height="500" alt="Panorama" />
+		</div>
+	</div>
+	<a class="info round" href="demo.html">Full Page</a>
+</div>
+
+
+<h5><i><a href="mailto:evgeny@likov.me">evgeny@likov.me</a></i></h5>
+</body></html>
