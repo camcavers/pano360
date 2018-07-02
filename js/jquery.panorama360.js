@@ -13,7 +13,7 @@
 				start_position: 0,
 				image_width: 0,
 				image_height: 0,
-				mouse_wheel_multiplier: 20,
+				mouse_wheel_multiplier: 5,
 				bind_resize: true
 			};
 			if(options) $.extend(settings, options);
@@ -67,8 +67,11 @@
 				scrollView(panoramaContainer, elem_width, scrollDelta);
 				return false;
 			}).bind("mousewheel",function(e,distance){
+                console.log('distance',distance);
 				var delta=Math.ceil(Math.sqrt(Math.abs(distance)));
+                console.log('delta',delta);
 				delta=distance<0 ? -delta : delta;
+                console.log('delta1',delta);
 				scrollDelta = scrollDelta + delta * 5;
 				scrollView(panoramaContainer,elem_width,delta*settings.mouse_wheel_multiplier);
 				return false;
