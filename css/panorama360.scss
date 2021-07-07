@@ -36,10 +36,10 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    cursor: url(../images/openhand.cur), default;
+    cursor: grab;
 
     &.grab {
-      cursor: url(../images/closedhand.cur), default;
+      cursor: grabbing;
     }
 
     .area {
